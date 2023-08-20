@@ -1,8 +1,8 @@
+// "\\" means \ in Java
+// need \ for &^、$、.、|、?、*、+、(、)、{、}、[、]：
 
 public class RegularExpression {
 	public static void main(String[] args) {
-		
-		// "\\" means \ in Java
 		
 		// match numbers from 0 to 9
 		System.out.println("123".matches("\\d\\d\\d"));  // true
