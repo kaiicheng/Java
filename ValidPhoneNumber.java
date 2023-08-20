@@ -20,5 +20,8 @@ public class ValidPhoneNumber {
 	            break;
 	        }
 	    }
+	    
+	    String tel2 = "12345678910";
+	    System.out.println(tel2.matches("\\d{11}"));
 	}
 }
