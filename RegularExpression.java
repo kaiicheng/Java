@@ -18,13 +18,13 @@ public class RegularExpression {
 		System.out.println("123abc".matches("\\d\\d\\d\\w\\w\\w"));  // true
 		System.out.println();
 		
-		// match numbers with multiple times (>=0)
+		// * mean matching numbers with multiple times (>=0)
 		System.out.println("".matches("\\w*"));  // true
 		System.out.println("123".matches("\\d*"));  // true
 		System.out.println("123456789".matches("\\d*"));  // true
 		System.out.println();
 		
-		// match characters/underscore/number with multiple times (>=1)
+		// + mean matching characters/underscore/number with multiple times (>=1)
 		System.out.println("".matches("\\w+"));  // false
 		System.out.println("a12".matches("\\w+"));  // true
 		System.out.println("ab12".matches("\\w+"));  // true
