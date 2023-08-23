@@ -17,5 +17,9 @@ public class PatternReplaceAll {
 		String r3 = s3.replaceAll("\\s([a-z]{3,5})\\s", " <b>$1</b> ");
 		System.out.println(r3); // the quick brown fox jumps <b>over</b> the <b>lazy</b> dog.
 	
+		// name the expression as four, and catch later
+		String s4 = "the quick brown fox jumps over the lazy dog.";
+		String r4 = s4.replaceAll("\\s(?<four>[a-z]{4})\\s", " <b>${four}</b> ");
+		System.out.println(r4); // the quick brown fox jumps <b>over</b> the <b>lazy</b> dog.	
 	}
 }
