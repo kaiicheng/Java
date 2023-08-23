@@ -1,3 +1,5 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class PatternReplaceAll {
 	public static void main(String[] args) {
@@ -21,5 +23,12 @@ public class PatternReplaceAll {
 		String s4 = "the quick brown fox jumps over the lazy dog.";
 		String r4 = s4.replaceAll("\\s(?<four>[a-z]{4})\\s", " <b>${four}</b> ");
 		System.out.println(r4); // the quick brown fox jumps <b>over</b> the <b>lazy</b> dog.	
+
+		// swap $1 and $2
+		String input = "Hello, world! How are you?";
+		Pattern pattern = Pattern.compile("(\\w+),\\s+(\\w+)!");
+		Matcher matcher = pattern.matcher(input);
+		String output = matcher.replaceAll("$2, $1!");
+		System.out.println(output); // "world, Hello! How are you?"
 	}
 }
