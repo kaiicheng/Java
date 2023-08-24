@@ -22,6 +22,17 @@ public class PatternStartEndGroup {
 		
 		System.out.println(m.group(1));  // aaa
 		System.out.println(m.group(2));  // 2223
-
+		System.out.println();
+		
+		
+		
+		Pattern p2=Pattern.compile("\\d+"); 
+		Matcher m2=p2.matcher("My name is:456456 Phone:0532214 Email:aaa123@aaa.com"); 
+	
+		while(m2.find()) { 
+		     System.out.println("group: " + m2.group()); 
+		     System.out.print("start:" + m2.start()); 
+		     System.out.println(" end:" + m2.end()); 
+		} 
 	}
 }
