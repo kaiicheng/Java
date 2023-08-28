@@ -16,7 +16,7 @@ public class JavaHashMapGetOrDefault {
 		System.out.println(map);
 
 		// "Score" not in the map, so get "80"
-		String score = map.getOrDefault("Score", "80");
+		String score = map.getOrDefault("Score", "Not Found");
 		System.out.println(score);
 		System.out.println(map);
 		
