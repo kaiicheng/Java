@@ -4,7 +4,7 @@ import java.util.Queue;
 public class QueueInitialization {
 	public static void main(String[] args) {
 
-		//add()和remove()方法在失败的时候会抛出异常(不推荐)
+		// initialization
         Queue<String> queue = new LinkedList<String>();
         
         // add element to the beginning of the queue
