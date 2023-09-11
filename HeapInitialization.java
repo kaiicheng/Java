@@ -1,7 +1,3 @@
-/*
- * Queue is FIFO.
- * PriorityQueue has priority when doing offer(), peek(), and remove().
- */
 
 import java.util.PriorityQueue;
 import java.util.Queue;
@@ -24,7 +20,8 @@ public class HeapInitialization {
 		// peek() to see the root element
     	System.out.println(heap.peek());
 		
-		// poll() remove the element
+		// poll() remove the element from the heap and print out
+    	// 2 3 3 4 7 8 9 
 		while(!heap.isEmpty()) {
 			System.out.print(heap.poll()+ " ");
 		}
