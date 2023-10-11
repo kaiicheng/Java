@@ -1,5 +1,10 @@
 public class FloatAndDouble {
     public static void main(String[] args){
+
+        // storage size
+        // integer: long > int > short > byte
+        // float: double > float
+
         // int
         // -2147483648~2147483647
 
